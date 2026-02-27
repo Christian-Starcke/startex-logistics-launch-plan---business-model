@@ -4,26 +4,68 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 ---
 
-## 🔗 Shared Infrastructure (Cross-Role Tools)
+## 🔗 Complete Tech Stack Inventory
 
-These tools are used by **multiple roles** across the organization:
+Complete list of all tools needed across all roles:
 
-- **CRM (Twenty – Open source)** – Shared by: AE, AM, Carrier Rep
-- **TMS (Transportation Management System)** – Shared by: AM, Carrier Rep, Carrier Development, Operations Coordinator, Track & Trace, Customer Operations, Billing, Credit & Risk, Carrier Compliance, Network Optimization
-- **Sales Engagement – Calls (Custom Power-Dialer)** – Shared by: AE, Carrier Rep
-- **Sales Engagement – Email (Instantly.ai)** – Shared by: AE, Carrier Rep
-- **Sales Engagement – LinkedIn (Sprouts/HeyReach)** – Shared by: AE, Carrier Rep
-- **Google Workspace** (Gmail, Calendar, Drive, Docs, Sheets, Slides, Meet) – Shared by: AE, AM, Carrier Rep, Operations Coordinator, Pricing Analyst, Bid/RFP Team, Customer Operations, Billing, Credit & Risk, Carrier Compliance
-- **Google Meet** – Shared by: AE, AM, Customer Operations
-- **Granola (AI Meeting Notetaker)** – Shared by: AE, AM
-- **Google Drive** – Shared by: Operations Coordinator, Bid/RFP Team, Billing, Carrier Compliance
-- **Google Sheets** – Shared by: AM, Pricing Analyst, Bid/RFP Team
-- **DAT RateView** – Shared by: AE, AM, Carrier Rep, Pricing Analyst
-- **SAFER** – Shared by: Carrier Rep, Carrier Development, Credit & Risk, Carrier Compliance
-- **e-Signature (DocuSign/PandaDoc)** – Shared by: AE, Carrier Development, Bid/RFP Team
-- **Fraud Detection System** – Shared by: Credit & Risk, Carrier Compliance
-- **QuickBooks Online** – Shared by: Billing, Customer Operations (reporting)
-- **n8n (Automation Platform)** – Shared by: Track & Trace, Network Optimization
+### Core Systems
+- **CRM** – Twenty (Open source)
+- **TMS (Transportation Management System)** – Core operational platform (e.g. AscendTMS or similar)
+- **Accounting System** – QuickBooks Online
+- **Factoring Platform** – Freight factoring portal (vendor TBD)
+
+### Sales & Prospecting
+- **Lead Data Source** – Apollo.io
+- **Lead Enrichment** – Clay or Custom
+- **Sales Engagement – Email** – Instantly.ai
+- **Sales Engagement – Calls** – Custom Power-Dialer
+- **Sales Engagement – LinkedIn** – Sprouts / HeyReach
+
+### Load Board & Rate Intelligence
+- **Load Board** – DAT Loadboard
+- **Rate Intelligence** – DAT RateView
+- **Lane Intelligence / Analytics** – DAT lane analytics + TMS historical data exports
+- **Carrier Directory / Sourcing** – Carrier Source
+
+### Communication & Collaboration
+- **Google Workspace** – Gmail, Calendar, Drive, Docs, Sheets, Slides, Meet
+- **Google Voice** – Phone system / VoIP
+- **SMS-capable tools** – In-app messaging or SMS integrations
+- **Virtual Meeting** – Google Meet
+- **AI Meeting Notetaker** – Granola
+- **Internal Communication (Optional)** – Slack / Teams
+
+### Contracts & Documentation
+- **e-Signature** – DocuSign / PandaDoc
+- **Document Storage** – Google Drive
+
+### Compliance & Verification
+- **SAFER** – FMCSA carrier verification
+- **Insurance Verification Portals** – Carrier insurance portals
+- **FMCSA Portals** – Regulatory compliance portals
+- **Fraud Detection System** – Red flag system in TMS
+
+### Credit & Risk Management
+- **Credit Tools** – Ansonia, Dun & Bradstreet, factoring provider tools
+- **Payment Risk Management** – Risk scoring/management system or workflow
+
+### Business Intelligence & Analytics
+- **BI Tools** – Looker Studio / Power BI
+- **Spreadsheet Tools** – Google Sheets
+- **Data Warehouse (Phase 2+)** – BigQuery or Postgres
+
+### Automation & Optimization
+- **Automation Platform** – n8n
+- **Optimization & AI (Phase 2+)** – Python/SQL analytics stack
+- **ELD/Telematics Integrations** – Tracking integrations
+
+### Digital Presence
+- **Company Website** – StarTex Logistics website
+- **Branded Email Domain** – @startexlogistics.com
+
+### Optional / Phase 2 Tools
+- **RFP Software** – Optional for very large bids
+- **Helpdesk** – Zendesk / Freshdesk (optional, once volume is higher)
 
 ---
 
