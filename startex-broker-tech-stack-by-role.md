@@ -17,19 +17,35 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Forecast volume  
 
 **Core Tech Stack**
-- **CRM (Sales Hub)** – *HubSpot (starter) or similar*
+- **CRM (Sales Hub)** – *Twenty (Open source)*
   - Track shipper accounts, contacts, and opportunities
   - Log calls, emails, meetings
   - Manage pipeline and forecast volume
+- **Lead Data Source** – *Apollo.io*
+  - Build lists of target chemical manufacturers (NAICS 325110, $50M–$250M)
+  - Access company and contact databases for prospecting
+- **Lead Enrichment** – *Clay or Custom*
+  - Enrich accounts with decision-maker info
+  - Data enrichment and contact verification
+- **Sales Engagement – Email** – *Instantly.ai*
+  - Automated outbound email sequences to targeted chemical manufacturers
+  - Template library for outreach
+  - Email deliverability and tracking
+- **Sales Engagement – Calls** – *Custom Power-Dialer*
+  - Power-dialing system for high-volume outbound calls
+  - Call logging and tracking integration with CRM
+- **Sales Engagement – LinkedIn** – *Sprouts / HeyReach*
+  - LinkedIn outreach automation and sequencing
+  - Connection requests and messaging automation
 - **Email & Calendar** – *Google Workspace (Gmail + Calendar)*
   - Shipper-facing communication and meeting scheduling
   - Calendar for follow-ups and bid deadlines
-- **Sales Engagement / Sequencing (Optional Phase 2)** – *HubSpot Sequences or similar*
-  - Automated outbound sequences to targeted chemical manufacturers
-  - Template library for outreach
-- **Data & Prospecting (Optional)** – *NAICS / industry databases, LinkedIn Sales Navigator*
-  - Build lists of target chemical manufacturers (NAICS 325110, $50M–$250M)
-  - Enrich accounts with decision-maker info
+- **Virtual Meeting Infrastructure** – *Google Meet*
+  - Video meetings with shippers and prospects
+  - Integrated with Google Calendar for scheduling
+- **AI Meeting Notetaker** – *Granola*
+  - Automated meeting notes and summaries
+  - Action items and follow-up tracking
 - **Digital Presence**
   - Company **website** (StarTex Logistics site) for credibility
   - **Branded email domain** (e.g. `@startexlogistics.com`)
@@ -57,6 +73,7 @@ This document translates the role structure in `startex-broker-org-structure.md`
   - Shipper scorecards: on‑time %, claims, spend, lane volume
 - **Communication Tools**
   - Google Workspace (Gmail, Meet) for QBRs / service reviews
+  - **AI Meeting Notetaker (Granola)** for automated QBR notes and action items
 
 ---
 
@@ -299,7 +316,9 @@ This document translates the role structure in `startex-broker-org-structure.md`
 ## 9️⃣ Summary View – Core Systems by Function
 
 - **TMS** – Operational backbone: loads, carriers, track & trace, documents  
-- **CRM** – Shipper relationship + revenue pipeline (AE/AM)  
+- **CRM (Twenty – Open source)** – Shipper relationship + revenue pipeline (AE/AM)  
+- **Sales Stack** – Apollo.io (lead data), Clay/Custom (enrichment), Instantly.ai (email), Custom Power-Dialer (calls), Sprouts/HeyReach (LinkedIn)  
+- **Meeting Infrastructure** – Google Meet + Granola (AI meeting notes)  
 - **Load Board & Rate Tools** – DAT Loadboard + RateView for capacity and pricing  
 - **Accounting (QuickBooks) + Factoring** – Cash flow, invoicing, payables  
 - **Compliance Stack** – SAFER + insurance verification + TMS fields  
