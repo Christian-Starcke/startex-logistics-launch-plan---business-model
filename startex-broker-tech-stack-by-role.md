@@ -8,9 +8,12 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 These tools are used by **multiple roles** across the organization:
 
-- **CRM (Twenty – Open source)** – Shared by: AE, AM
+- **CRM (Twenty – Open source)** – Shared by: AE, AM, Carrier Rep
 - **TMS (Transportation Management System)** – Shared by: AM, Carrier Rep, Carrier Development, Operations Coordinator, Track & Trace, Customer Operations, Billing, Credit & Risk, Carrier Compliance, Network Optimization
-- **Google Workspace** (Gmail, Calendar, Drive, Docs, Sheets, Slides, Meet) – Shared by: AE, AM, Operations Coordinator, Pricing Analyst, Bid/RFP Team, Customer Operations, Billing, Credit & Risk, Carrier Compliance
+- **Sales Engagement – Calls (Custom Power-Dialer)** – Shared by: AE, Carrier Rep
+- **Sales Engagement – Email (Instantly.ai)** – Shared by: AE, Carrier Rep
+- **Sales Engagement – LinkedIn (Sprouts/HeyReach)** – Shared by: AE, Carrier Rep
+- **Google Workspace** (Gmail, Calendar, Drive, Docs, Sheets, Slides, Meet) – Shared by: AE, AM, Carrier Rep, Operations Coordinator, Pricing Analyst, Bid/RFP Team, Customer Operations, Billing, Credit & Risk, Carrier Compliance
 - **Google Meet** – Shared by: AE, AM, Customer Operations
 - **Granola (AI Meeting Notetaker)** – Shared by: AE, AM
 - **Google Drive** – Shared by: Operations Coordinator, Bid/RFP Team, Billing, Carrier Compliance
@@ -46,14 +49,14 @@ These tools are used by **multiple roles** across the organization:
 - **Lead Enrichment** – *Clay or Custom*
   - Enrich accounts with decision-maker info
   - Data enrichment and contact verification
-- **Sales Engagement – Email** – *Instantly.ai*
+- **Sales Engagement – Email** – *Instantly.ai* *(Shared with Carrier Rep)*
   - Automated outbound email sequences to targeted chemical manufacturers
   - Template library for outreach
   - Email deliverability and tracking
-- **Sales Engagement – Calls** – *Custom Power-Dialer*
+- **Sales Engagement – Calls** – *Custom Power-Dialer* *(Shared with Carrier Rep)*
   - Power-dialing system for high-volume outbound calls
   - Call logging and tracking integration with CRM
-- **Sales Engagement – LinkedIn** – *Sprouts / HeyReach*
+- **Sales Engagement – LinkedIn** – *Sprouts / HeyReach* *(Shared with Carrier Rep)*
   - LinkedIn outreach automation and sequencing
   - Connection requests and messaging automation
 - **Email & Calendar** – *Google Workspace (Gmail + Calendar)* *(Shared across multiple roles)*
@@ -111,14 +114,29 @@ These tools are used by **multiple roles** across the organization:
 - **TMS** *(Shared across operations, carrier, and financial roles)*
   - Core workspace for posting loads, assigning carriers, tracking status
   - Carrier profiles (lanes, equipment, performance history)
+- **CRM** *(Shared with AE, AM)*
+  - Track carrier relationships, contacts, and opportunities
+  - Log calls, emails, meetings with carriers
+  - Manage carrier pipeline and capacity commitments
 - **Load Board**
   - **DAT Loadboard** for posting freight and sourcing spot capacity
   - Integrated with TMS where possible
 - **Carrier Directory / Sourcing**
   - **Carrier Source** or similar for carrier discovery and rating
+- **Sales Engagement – Calls** – *Custom Power-Dialer* *(Shared with AE)*
+  - Power-dialing system for high-volume outbound calls to carriers
+  - Call logging and tracking integration with CRM
+- **Sales Engagement – Email** – *Instantly.ai* *(Shared with AE)*
+  - Automated email sequences to new and existing carriers
+  - Template library for carrier outreach
+  - Email deliverability and tracking
+- **Sales Engagement – LinkedIn** – *Sprouts / HeyReach* *(Shared with AE)*
+  - LinkedIn outreach automation to carrier decision-makers
+  - Connection requests and messaging automation
 - **Communication**
   - Google Voice / phone system for carrier calls
   - SMS-capable tools or in‑app messaging (where supported by TMS)
+  - Google Workspace (Gmail, Calendar) *(Shared across multiple roles)*
 - **Rate Intelligence**
   - **DAT RateView** *(Shared with Pricing Analyst)* for live market rate benchmarks
 
@@ -335,8 +353,8 @@ These tools are used by **multiple roles** across the organization:
 ## 9️⃣ Summary View – Core Systems by Function
 
 - **TMS** – Operational backbone: loads, carriers, track & trace, documents  
-- **CRM (Twenty – Open source)** – Shipper relationship + revenue pipeline (AE/AM)  
-- **Sales Stack** – Apollo.io (lead data), Clay/Custom (enrichment), Instantly.ai (email), Custom Power-Dialer (calls), Sprouts/HeyReach (LinkedIn)  
+- **CRM (Twenty – Open source)** – Shipper relationship + revenue pipeline (AE/AM), carrier relationship management (Carrier Rep)  
+- **Sales Stack** – Apollo.io (lead data), Clay/Custom (enrichment), Instantly.ai (email), Custom Power-Dialer (calls), Sprouts/HeyReach (LinkedIn) – *Shared by AE (shipper outreach) and Carrier Rep (carrier outreach)*  
 - **Meeting Infrastructure** – Google Meet + Granola (AI meeting notes)  
 - **Load Board & Rate Tools** – DAT Loadboard + RateView for capacity and pricing  
 - **Accounting (QuickBooks) + Factoring** – Cash flow, invoicing, payables  
