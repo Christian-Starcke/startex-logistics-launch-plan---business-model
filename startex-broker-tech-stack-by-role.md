@@ -18,9 +18,10 @@ These tools are used by **multiple roles** across the organization:
 - **Granola (AI Meeting Notetaker)** – Shared by: AE, AM
 - **Google Drive** – Shared by: Operations Coordinator, Bid/RFP Team, Billing, Carrier Compliance
 - **Google Sheets** – Shared by: AM, Pricing Analyst, Bid/RFP Team
-- **DAT RateView** – Shared by: Carrier Rep, Pricing Analyst
-- **SAFER** – Shared by: Carrier Development, Credit & Risk, Carrier Compliance
-- **e-Signature (DocuSign/PandaDoc)** – Shared by: Carrier Development, Bid/RFP Team
+- **DAT RateView** – Shared by: AE, AM, Carrier Rep, Pricing Analyst
+- **SAFER** – Shared by: Carrier Rep, Carrier Development, Credit & Risk, Carrier Compliance
+- **e-Signature (DocuSign/PandaDoc)** – Shared by: AE, Carrier Development, Bid/RFP Team
+- **Fraud Detection System** – Shared by: Credit & Risk, Carrier Compliance
 - **QuickBooks Online** – Shared by: Billing, Customer Operations (reporting)
 - **n8n (Automation Platform)** – Shared by: Track & Trace, Network Optimization
 
@@ -68,6 +69,14 @@ These tools are used by **multiple roles** across the organization:
 - **AI Meeting Notetaker** – *Granola* *(Shared with AM)*
   - Automated meeting notes and summaries
   - Action items and follow-up tracking
+- **Rate Intelligence** – *DAT RateView* *(Shared with AM, Carrier Rep, Pricing Analyst)*
+  - Market rate benchmarks for pricing negotiations
+  - Lane rate intelligence for lane discovery
+- **Lane Intelligence / Analytics**
+  - TMS historical lane data exports
+  - DAT lane analytics for lane discovery and opportunity identification
+- **e-Signature Tool** – *DocuSign / PandaDoc* *(Shared with Carrier Development, Bid/RFP Team)*
+  - Contract execution and setup with shippers
 - **Digital Presence**
   - Company **website** (StarTex Logistics site) for credibility
   - **Branded email domain** (e.g. `@startexlogistics.com`)
@@ -93,6 +102,8 @@ These tools are used by **multiple roles** across the organization:
 - **Analytics & Reporting**
   - Simple **BI layer** (Google Sheets + Looker Studio or built-in TMS reports)
   - Shipper scorecards: on‑time %, claims, spend, lane volume
+- **Rate Intelligence** – *DAT RateView* *(Shared with AE, Carrier Rep, Pricing Analyst)*
+  - Market rate benchmarks for rate discussions with shippers
 - **Communication Tools**
   - Google Workspace (Gmail, Meet) for QBRs / service reviews *(Shared across multiple roles)*
   - **AI Meeting Notetaker (Granola)** *(Shared with AE)* for automated QBR notes and action items
@@ -138,7 +149,10 @@ These tools are used by **multiple roles** across the organization:
   - SMS-capable tools or in‑app messaging (where supported by TMS)
   - Google Workspace (Gmail, Calendar) *(Shared across multiple roles)*
 - **Rate Intelligence**
-  - **DAT RateView** *(Shared with Pricing Analyst)* for live market rate benchmarks
+  - **DAT RateView** *(Shared with AE, AM, Pricing Analyst)* for live market rate benchmarks
+- **Compliance & Verification**
+  - **SAFER** *(Shared with Carrier Development, Credit & Risk, Carrier Compliance)* for carrier authority, safety ratings, and compliance vetting
+  - TMS compliance fields for tracking carrier credentials
 
 ---
 
@@ -263,6 +277,10 @@ These tools are used by **multiple roles** across the organization:
 - **Reporting Layer**
   - Looker Studio / Power BI on top of TMS + QuickBooks *(QuickBooks shared with Billing)*
   - Standard QBR decks (Google Slides) fed from these reports
+- **SLA Tracking & Compliance**
+  - SLA-specific tracking dashboard in BI layer
+  - Automated alerts for SLA violations
+  - SLA compliance reporting by shipper
 - **Ticketing / Support (Optional)**
   - Simple shared inbox in Gmail *(Google Workspace shared across multiple roles)*
   - Optional: lightweight helpdesk (e.g. Zendesk/Freshdesk) once volume is higher
@@ -284,6 +302,12 @@ These tools are used by **multiple roles** across the organization:
   - QuickBooks Online *(Shared with Customer Operations for reporting)* as the financial system of record
 - **TMS ↔ Accounting Integration** *(TMS shared across operations, carrier, and financial roles)*
   - Push loads from TMS to QuickBooks for invoicing & payables
+- **Accessorial Approval Workflow**
+  - Approval workflow in TMS or QuickBooks for accessorial charges
+  - Document storage for accessorial approvals
+- **Margin Validation Dashboard**
+  - BI layer (Looker Studio / Power BI) for margin validation reports
+  - Margin analysis by shipper, lane, and carrier
 - **Factoring Platform**
   - Freight factoring portal for invoice submission and funding
 - **Document Storage**
@@ -303,6 +327,14 @@ These tools are used by **multiple roles** across the organization:
   - Shipper credit reports (e.g. Ansonia, Dun & Bradstreet, factoring provider tools)
 - **Carrier Compliance**
   - SAFER *(Shared with Carrier Development, Carrier Compliance)*, insurance certificate tracking, and TMS carrier compliance fields *(TMS shared across operations, carrier, and financial roles)*
+- **Fraud Detection System**
+  - Red flag system in TMS for carrier fraud detection
+  - Pattern recognition for suspicious carrier behavior
+  - Integration with SAFER and credit tools for fraud prevention
+- **Payment Risk Management**
+  - Payment risk scoring/management system or workflow
+  - Credit limit tracking and approval workflows
+  - Risk threshold monitoring and alerts
 - **Policy & Playbooks**
   - Internal Google Docs *(Google Workspace shared across multiple roles)* for risk thresholds, approval workflows
 
@@ -324,6 +356,10 @@ These tools are used by **multiple roles** across the organization:
   - Expiry reminders for insurance renewals
 - **External Data Sources**
   - SAFER *(Shared with Carrier Development, Credit & Risk)*, FMCSA portals, carrier insurance portals
+- **Fraud Detection System**
+  - Enhanced fraud detection/red flag system in TMS *(Shared with Credit & Risk)*
+  - Pattern recognition for suspicious carrier behavior
+  - Automated alerts for compliance violations
 - **Document Management**
   - Google Drive *(Shared with Operations Coordinator, Bid/RFP Team, Billing)* folders per carrier for certificates and agreements
 
