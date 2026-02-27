@@ -1,6 +1,25 @@
 ## StarTex Logistics – Tech Stack by Role & Responsibility
 
-This document translates the role structure in `startex-broker-org-structure.md` into a **concrete tech stack** and shows **which responsibilities each tool supports**. It’s written so it can be shared externally (e.g. with vendors, advisors, or hires).
+This document translates the role structure in `startex-broker-org-structure.md` into a **concrete tech stack** and shows **which responsibilities each tool supports**. It's written so it can be shared externally (e.g. with vendors, advisors, or hires).
+
+---
+
+## 🔗 Shared Infrastructure (Cross-Role Tools)
+
+These tools are used by **multiple roles** across the organization:
+
+- **CRM (Twenty – Open source)** – Shared by: AE, AM
+- **TMS (Transportation Management System)** – Shared by: AM, Carrier Rep, Carrier Development, Operations Coordinator, Track & Trace, Customer Operations, Billing, Credit & Risk, Carrier Compliance, Network Optimization
+- **Google Workspace** (Gmail, Calendar, Drive, Docs, Sheets, Slides, Meet) – Shared by: AE, AM, Operations Coordinator, Pricing Analyst, Bid/RFP Team, Customer Operations, Billing, Credit & Risk, Carrier Compliance
+- **Google Meet** – Shared by: AE, AM, Customer Operations
+- **Granola (AI Meeting Notetaker)** – Shared by: AE, AM
+- **Google Drive** – Shared by: Operations Coordinator, Bid/RFP Team, Billing, Carrier Compliance
+- **Google Sheets** – Shared by: AM, Pricing Analyst, Bid/RFP Team
+- **DAT RateView** – Shared by: Carrier Rep, Pricing Analyst
+- **SAFER** – Shared by: Carrier Development, Credit & Risk, Carrier Compliance
+- **e-Signature (DocuSign/PandaDoc)** – Shared by: Carrier Development, Bid/RFP Team
+- **QuickBooks Online** – Shared by: Billing, Customer Operations (reporting)
+- **n8n (Automation Platform)** – Shared by: Track & Trace, Network Optimization
 
 ---
 
@@ -17,7 +36,7 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Forecast volume  
 
 **Core Tech Stack**
-- **CRM (Sales Hub)** – *Twenty (Open source)*
+- **CRM (Sales Hub)** – *Twenty (Open source)* *(Shared with AM)*
   - Track shipper accounts, contacts, and opportunities
   - Log calls, emails, meetings
   - Manage pipeline and forecast volume
@@ -37,13 +56,13 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - **Sales Engagement – LinkedIn** – *Sprouts / HeyReach*
   - LinkedIn outreach automation and sequencing
   - Connection requests and messaging automation
-- **Email & Calendar** – *Google Workspace (Gmail + Calendar)*
+- **Email & Calendar** – *Google Workspace (Gmail + Calendar)* *(Shared across multiple roles)*
   - Shipper-facing communication and meeting scheduling
   - Calendar for follow-ups and bid deadlines
-- **Virtual Meeting Infrastructure** – *Google Meet*
+- **Virtual Meeting Infrastructure** – *Google Meet* *(Shared with AM, Customer Operations)*
   - Video meetings with shippers and prospects
   - Integrated with Google Calendar for scheduling
-- **AI Meeting Notetaker** – *Granola*
+- **AI Meeting Notetaker** – *Granola* *(Shared with AM)*
   - Automated meeting notes and summaries
   - Action items and follow-up tracking
 - **Digital Presence**
@@ -62,18 +81,18 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Expansion into new modes/lanes  
 
 **Core Tech Stack**
-- **CRM**
+- **CRM** *(Shared with AE)*
   - Single source of truth for existing accounts (volumes, lanes, contacts)
   - Track expansions into new lanes/modes
-- **TMS (Transportation Management System)**
+- **TMS (Transportation Management System)** *(Shared across operations, carrier, and financial roles)*
   - View historical load data by shipper (volume, lanes, service performance)
   - Support lane forecasting and service review prep
 - **Analytics & Reporting**
   - Simple **BI layer** (Google Sheets + Looker Studio or built-in TMS reports)
   - Shipper scorecards: on‑time %, claims, spend, lane volume
 - **Communication Tools**
-  - Google Workspace (Gmail, Meet) for QBRs / service reviews
-  - **AI Meeting Notetaker (Granola)** for automated QBR notes and action items
+  - Google Workspace (Gmail, Meet) for QBRs / service reviews *(Shared across multiple roles)*
+  - **AI Meeting Notetaker (Granola)** *(Shared with AE)* for automated QBR notes and action items
 
 ---
 
@@ -89,7 +108,7 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Cover loads  
 
 **Core Tech Stack**
-- **TMS**
+- **TMS** *(Shared across operations, carrier, and financial roles)*
   - Core workspace for posting loads, assigning carriers, tracking status
   - Carrier profiles (lanes, equipment, performance history)
 - **Load Board**
@@ -101,7 +120,7 @@ This document translates the role structure in `startex-broker-org-structure.md`
   - Google Voice / phone system for carrier calls
   - SMS-capable tools or in‑app messaging (where supported by TMS)
 - **Rate Intelligence**
-  - **DAT RateView** for live market rate benchmarks
+  - **DAT RateView** *(Shared with Pricing Analyst)* for live market rate benchmarks
 
 ---
 
@@ -112,13 +131,13 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Build long-term capacity pools  
 
 **Core Tech Stack**
-- **TMS + Carrier Database**
+- **TMS + Carrier Database** *(Shared across operations, carrier, and financial roles)*
   - Structured carrier onboarding workflow (documents, insurance, authority)
   - Tags for preferred lanes, equipment, and performance
-- **e-Signature Tool**
+- **e-Signature Tool** *(Shared with Bid/RFP Team)*
   - For Broker–Carrier Agreements (e.g. DocuSign, PandaDoc)
 - **Compliance & Verification**
-  - Integration or process with **SAFER**, insurance verification portals
+  - Integration or process with **SAFER** *(Shared with Credit & Risk, Carrier Compliance)*, insurance verification portals
 
 ---
 
@@ -135,14 +154,14 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Documentation flow  
 
 **Core Tech Stack**
-- **TMS**
+- **TMS** *(Shared across operations, carrier, and financial roles)*
   - Load lifecycle management (pickup → in transit → delivered → invoiced)
   - Document storage (rate cons, BOLs, PODs)
 - **Track & Trace Tools**
   - TMS built‑in tracking or integrations (ELD/telematics, carrier apps)
   - Email/SMS automations for status updates (where supported)
 - **Shared Communication**
-  - Google Workspace (Gmail, Calendar, Drive) for appts & doc sharing
+  - Google Workspace (Gmail, Calendar, Drive) *(Shared across multiple roles)* for appts & doc sharing
 - **Issue Management**
   - Internal notes in TMS for exceptions
   - Shared Slack/Teams (optional) for internal war‑room comms
@@ -158,14 +177,14 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Flag delays  
 
 **Core Tech Stack**
-- **TMS + Tracking Module**
+- **TMS + Tracking Module** *(Shared across operations, carrier, and financial roles)*
   - Central place to log location updates and ETA changes
   - Standard workflow/checklist per load
 - **Dialer / Call System**
   - VoIP system (e.g. Google Voice or lightweight call center tool)
 - **Automation (Phase 2)**
   - Automated location pings via app/ELD integrations
-  - Simple RPA/n8n flows to notify reps when loads go off‑schedule
+  - Simple RPA/n8n flows *(Shared with Network Optimization)* to notify reps when loads go off‑schedule
 
 ---
 
@@ -181,9 +200,9 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 **Core Tech Stack**
 - **Rate Intelligence**
-  - DAT RateView (and similar tools) for market benchmarks
+  - DAT RateView *(Shared with Carrier Rep)* (and similar tools) for market benchmarks
 - **Data Workspace**
-  - Google Sheets + Looker Studio or BI tool on top of TMS export
+  - Google Sheets *(Shared with AM, Bid/RFP Team)* + Looker Studio or BI tool on top of TMS export
   - Lane P&L dashboards, margin analysis
 - **RFP Tooling (Lightweight)**
   - Structured templates in Google Sheets/Docs for bids
@@ -200,11 +219,11 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 **Core Tech Stack**
 - **Spreadsheet + BI**
-  - Google Sheets for bid grids, lane modeling
+  - Google Sheets *(Shared with AM, Pricing Analyst)* for bid grids, lane modeling
   - BI on top of historical TMS data for win‑rate and profitability
 - **Document Management**
-  - Google Drive folders for RFPs, proposals, and contracts
-- **e-Signature**
+  - Google Drive *(Shared with Operations Coordinator, Billing, Carrier Compliance)* folders for RFPs, proposals, and contracts
+- **e-Signature** *(Shared with Carrier Development)*
   - DocuSign / PandaDoc for final contract execution
 
 ---
@@ -221,13 +240,13 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Weekly/monthly reviews  
 
 **Core Tech Stack**
-- **TMS + BI**
+- **TMS + BI** *(TMS shared across operations, carrier, and financial roles)*
   - On‑time %, claims, dwell, and service metrics by shipper
 - **Reporting Layer**
-  - Looker Studio / Power BI on top of TMS + QuickBooks
+  - Looker Studio / Power BI on top of TMS + QuickBooks *(QuickBooks shared with Billing)*
   - Standard QBR decks (Google Slides) fed from these reports
 - **Ticketing / Support (Optional)**
-  - Simple shared inbox in Gmail
+  - Simple shared inbox in Gmail *(Google Workspace shared across multiple roles)*
   - Optional: lightweight helpdesk (e.g. Zendesk/Freshdesk) once volume is higher
 
 ---
@@ -244,13 +263,13 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 **Core Tech Stack**
 - **Accounting System**
-  - QuickBooks Online as the financial system of record
-- **TMS ↔ Accounting Integration**
+  - QuickBooks Online *(Shared with Customer Operations for reporting)* as the financial system of record
+- **TMS ↔ Accounting Integration** *(TMS shared across operations, carrier, and financial roles)*
   - Push loads from TMS to QuickBooks for invoicing & payables
 - **Factoring Platform**
   - Freight factoring portal for invoice submission and funding
 - **Document Storage**
-  - Google Drive for invoices, rate cons, and supporting docs
+  - Google Drive *(Shared with Operations Coordinator, Bid/RFP Team, Carrier Compliance)* for invoices, rate cons, and supporting docs
 
 ---
 
@@ -265,9 +284,9 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - **Credit Tools**
   - Shipper credit reports (e.g. Ansonia, Dun & Bradstreet, factoring provider tools)
 - **Carrier Compliance**
-  - SAFER, insurance certificate tracking, and TMS carrier compliance fields
+  - SAFER *(Shared with Carrier Development, Carrier Compliance)*, insurance certificate tracking, and TMS carrier compliance fields *(TMS shared across operations, carrier, and financial roles)*
 - **Policy & Playbooks**
-  - Internal Google Docs for risk thresholds, approval workflows
+  - Internal Google Docs *(Google Workspace shared across multiple roles)* for risk thresholds, approval workflows
 
 ---
 
@@ -282,13 +301,13 @@ This document translates the role structure in `startex-broker-org-structure.md`
 - Fraud detection  
 
 **Core Tech Stack**
-- **Compliance Workflow in TMS**
+- **Compliance Workflow in TMS** *(TMS shared across operations, carrier, and financial roles)*
   - Required fields for insurance, authority, safety rating
   - Expiry reminders for insurance renewals
 - **External Data Sources**
-  - SAFER, FMCSA portals, carrier insurance portals
+  - SAFER *(Shared with Carrier Development, Credit & Risk)*, FMCSA portals, carrier insurance portals
 - **Document Management**
-  - Google Drive folders per carrier for certificates and agreements
+  - Google Drive *(Shared with Operations Coordinator, Bid/RFP Team, Billing)* folders per carrier for certificates and agreements
 
 ---
 
@@ -304,9 +323,9 @@ This document translates the role structure in `startex-broker-org-structure.md`
 
 **Core Tech Stack**
 - **Data Warehouse / Central Store (Phase 2+)**
-  - Centralize TMS + QuickBooks + CRM data (could start with BigQuery or Postgres)
+  - Centralize TMS *(Shared across operations, carrier, and financial roles)* + QuickBooks + CRM data (could start with BigQuery or Postgres)
 - **Automation Platform**
-  - n8n or similar tool to automate repetitive workflows (status updates, notifications, basic matching)
+  - n8n *(Shared with Track & Trace)* or similar tool to automate repetitive workflows (status updates, notifications, basic matching)
 - **Optimization & AI (Longer-Term)**
   - Python/SQL analytics stack or vendor tools for routing + pricing
   - Experimentation layer for AI-assisted pricing and load matching
