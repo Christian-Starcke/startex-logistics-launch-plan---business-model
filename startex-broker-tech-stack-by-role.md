@@ -17,9 +17,9 @@ Complete list of all tools needed across all roles:
 ### Sales & Prospecting
 - **Lead Data Source** – Apollo.io
 - **Lead Enrichment** – Clay or Custom
-- **Sales Engagement – Email** – Instantly.ai
-- **Sales Engagement – Calls** – Custom Power-Dialer
-- **Sales Engagement – LinkedIn** – Sprouts / HeyReach
+- **Sales Engagement – Email & Campaigning/Sequencing** – Instantly.ai
+- **Sales Engagement – Calls & Campaigning/Sequencing** – Custom Power-Dialer OR Koncert/Klenty
+- **Sales Engagement – LinkedIn & Campaigning/Sequencing** – Sprouts / HeyReach
 
 ### Load Board & Rate Intelligence
 - **Load Board** – DAT Loadboard
