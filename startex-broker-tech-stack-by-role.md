@@ -1,3 +1,16 @@
+## Bare Bones GTM Stack Quickview
+
+| Layer | Tool |
+| --- | --- |
+| Data Source | Apollo.io |
+| CRM | HubSpot |
+| Lead Sequencer | Clay |
+| Call Engagement | Apollo.io (Clay native integration) |
+| Email Engagement | Instantly.ai (Clay native integration) |
+| LI Engagement | HeyReach |
+
+---
+
 ## StarTex Logistics – Tech Stack by Role & Responsibility
 
 This document translates the role structure in `startex-broker-org-structure.md` into a **concrete tech stack** and shows **which responsibilities each tool supports**. It's written so it can be shared externally (e.g. with vendors, advisors, or hires).
